@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { Usestate } from './Components/Usestate'
+import { Condicionales } from './Components/Condicionales'
+import { Map } from './Components/Map'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Usestate value={0}/>
+    <Condicionales/>
+    <Map/>
   </React.StrictMode>,
 )
